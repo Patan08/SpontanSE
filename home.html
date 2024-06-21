@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+
+<body>
+    <header>
+
+
+        <nav>
+            <div class="head-container">
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                                viewBox="0 96 960 960" width="26">
+                                <path
+                                    d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                            </svg></a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="jadwalTemu.html">Lihat jadwal</a></li>
+                    <li><a href="jadwal.html">Buat jadwal</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="acount.html">Account</a></li>
+                    <li><a href="login.html">Log Out</a></li>
+
+
+                </ul>
+                <ul class="menubar">
+                    <ul class="left-menu">
+                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#F3F3F3">
+                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                                </svg></a></li>
+                        <li class="hideOnMobile"><a href="home.html">SPONTAN</a></li>
+                    </ul>
+
+                    <ul class="right-menu">
+                        <li class="hideOnMobile"><a href="forum.html">Forum</a></li>
+                        <li class="dropdown hideOnMobile">
+                            <a href="#">Services</a>
+                            <div class="dropdown-content">
+                                <a href="jadwal.html">Buat jadwal temu</a>
+                                <a href="jadwalTemu.html">Lihat jadwal temu</a>
+                            </div>
+                        </li>
+                        <li class="hideOnMobile"><a href="acount.html">Account</a></li>
+                    </ul>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="https://pusat.jakarta.go.id/uploads/berita/20221003/puluhan-lansia-di-benhil-nikmati-layanan-pemeriksaan-kesehatan-gratis.jpg"
+                    style="width:100%">
+                <div class="content">
+                    <div class="title text" style="font-size: 92px; font-style: oblique;">Spontan</div>
+
+                    <div class="des text">
+                        "Melayani Anda Dengan Sepenuh Hati"
+                    </div>
+                    <div class="buttons">
+                        <button><a href="Login.html" style="text-decoration: none;">Login</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://www.kodim0406lubuklinggau.com/wp-content/uploads/2023/02/IMG-20230214-WA0053.jpg"
+                    style="width:100%">
+                <div class="content">
+                    <div class="title text">Explore The Best Art</div>
+
+                    <div class="des text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima numquam voluptates
+                        necessitatibus! Nisi laudantium nesciunt deserunt atque ad harum recusandae? Laborum numquam rem
+                        facilis iusto laboriosam eligendi in ipsa sapiente eius itaque, earum maiores et atque
+                        architecto mollitia repudiandae adipisci recusandae. Repellendus vitae magnam, quis esse
+                        adipisci autem necessitatibus ad?
+                    </div>
+                    <div class="buttons">
+                        <button><a href="search.html" style="text-decoration: none;">See More</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://pusk2jembrana.jembranakab.go.id/uploads/inventori/Pmeriksaan.jpg" style="width:100%">
+                <div class="content">
+                    <div class="title text"></div>
+                    <div class="des text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quasi ducimus voluptate
+                        officia accusamus eum velit, enim, placeat, quos excepturi eligendi ipsum maiores adipisci
+                        consequuntur accusantium non modi! Quo, dignissimos?
+                    </div>
+                    <div class="buttons">
+                        <button><a href="seniman.html" style="text-decoration: none;">See More</a></button></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="carousel.js"></script>
+    <script src="navbar.js"></script>
+</body>
+
+</html>

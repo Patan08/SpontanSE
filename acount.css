@@ -1,0 +1,46 @@
+main {
+  margin: 10px;
+}
+.header {
+  background-color: #90c695;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+.header img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.header div {
+  flex-grow: 1;
+}
+.header div h1 {
+  margin: 0;
+}
+.header div h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+.content {
+  background-color: #a6ce9e;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+.content div {
+  background-color: white;
+  padding: 100px;
+  border-radius: 10px;
+  width: 400px;
+}
+.content div p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.content div p span {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}

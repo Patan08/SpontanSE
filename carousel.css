@@ -1,0 +1,150 @@
+.mySlides {
+  display: none;
+  height: 90vh;
+  align-items: center;
+}
+
+img {
+  vertical-align: middle;
+  height: 90vh;
+  justify-content: center;
+}
+
+.content {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+
+  left: 25%;
+  right: 25%;
+  text-shadow: 0.5px 0.5px;
+  max-width: 100%;
+  text-align: center;
+  justify-content: center;
+  bottom: 7%;
+}
+
+.title {
+  color: #8fbc8f;
+  margin: 10px;
+  margin-bottom: 1px;
+  font-size: 46px;
+  font-weight: 800;
+}
+
+.des {
+  padding: 20px;
+  margin: 5px;
+  text-shadow: #303030 0.5px;
+}
+
+.buttons {
+  display: flex;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 40px;
+  gap: 5px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.buttons button {
+  border: none;
+  background-color: #eee;
+  letter-spacing: 3px;
+  font-family: Poppins;
+  font-weight: 500;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #303030;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: white;
+  color: #303030;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 300px) {
+  .prev,
+  .next,
+  .text,
+  img {
+    font-size: 11px;
+  }
+
+  .content,
+  .mySlides {
+    width: 100%;
+    padding-right: 5%;
+    font-size: 11px;
+    height: 60%;
+  }
+}

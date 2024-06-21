@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Puskesmas dan Posyandu</title>
+    <link rel="stylesheet" href="forum.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="head-container">
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                                viewBox="0 96 960 960" width="26">
+                                <path
+                                    d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                            </svg></a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="jadwalTemu.html">Lihat jadwal</a></li>
+                    <li><a href="jadwal.html">Buat jadwal</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="acount.html">Account</a></li>
+                    <li><a href="login.html">Log Out</a></li>
+                </ul>
+                <ul class="menubar">
+                    <ul class="left-menu">
+                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#F3F3F3">
+                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                                </svg></a></li>
+                        <li class="hideOnMobile"><a href="home.html">SPONTAN</a></li>
+                    </ul>
+
+                    <ul class="right-menu">
+                        <li class="hideOnMobile"><a href="forum.html">Forum</a></li>
+                        <li class="dropdown hideOnMobile">
+                            <a href="#">Services</a>
+                            <div class="dropdown-content">
+                                <a href="jadwal.html">Buat jadwal temu</a>
+                                <a href="jadwalTemu.html">Lihat jadwal temu</a>
+                            </div>
+                        </li>
+                        <li class="hideOnMobile"><a href="acount.html">Account</a></li>
+                    </ul>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="categories">
+            <div class="category-card" onclick="goToForumDetail('Forum Ibu Hamil')">
+                <div class="category-content">
+                    <h2>Forum Ibu Hamil</h2>
+                    <p>Deskripsi singkat atau informasi tambahan bisa ditambahkan di sini.</p>
+                </div>
+            </div>
+            <div class="category-card" onclick="goToForumDetail('Forum Ibu Menyusui')">
+                <div class="category-content">
+                    <h2>Forum Ibu Menyusui</h2>
+                    <p>Deskripsi singkat atau informasi tambahan bisa ditambahkan di sini.</p>
+                </div>
+            </div>
+            <div class="category-card" onclick="goToForumDetail('Forum Penyakit Lambung')">
+                <div class="category-content">
+                    <h2>Forum Penyakit Lambung</h2>
+                    <p>Deskripsi singkat atau informasi tambahan bisa ditambahkan di sini.</p>
+                </div>
+            </div>
+            <div class="category-card" onclick="goToForumDetail('Forum Penyuluhan Imunisasi')">
+                <div class="category-content">
+                    <h2>Forum Penyuluhan Imunisasi</h2>
+                    <p>Deskripsi singkat atau informasi tambahan bisa ditambahkan di sini.</p>
+                </div>
+            </div>
+            <div class="category-card" onclick="goToForumDetail('Forum Penyakit Obesitas')">
+                <div class="category-content">
+                    <h2>Forum Penyakit Obesitas</h2>
+                    <p>Deskripsi singkat atau informasi tambahan bisa ditambahkan di sini.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <script src="forum.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>
